@@ -72,14 +72,14 @@
 }
 
 /* Experience cards grid */
-.experience-grid, .skills-grid {
+.experience-grid, .skills-grid, .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.experience-card, .skill-card {
+.experience-card, .skill-card, .project-card {
     background: rgba(13, 36, 65, 0.7);
     border-radius: 15px;
     overflow: hidden;
@@ -88,7 +88,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-card:hover, .skill-card:hover {
+.experience-card:hover, .skill-card:hover, .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 12, 24, 0.4);
 }
@@ -103,6 +103,13 @@
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #ffffff;
+}
+
+.project-tech {
+    color: #4da6ff;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .company {

@@ -1,11 +1,19 @@
 /* Reset CSS for Amirmahdi Ghasabioroji's Portfolio */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Document elements */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.5;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   
   /* Block elements */

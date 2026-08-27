@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Posts - Amirmahdi Ghasabioroji</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/mobile.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/addpost.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
             <h1>Amirmahdi Ghasabioroji</h1>
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="hamburger">
+        <label for="nav-toggle" class="hamburger" aria-label="Open navigation">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -47,54 +47,54 @@
                     <label for="month-filter" class="visually-hidden">Filter posts by month</label>
                     <select id="month-filter" name="month" class="form-control">
                         <option value="all" selected>All Months</option>
-                        <option value="Jan">Jan</option>
-                        <option value="Mar">Mar</option>
-                        <option value="May">May</option>
                         <option value="Aug">Aug</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Sep">Sep</option>
                     </select>
                 </div>
 
                 <div class="blog-post" data-month="Aug">
-                    <h2>Lessons from Leadership and Real-World Work</h2>
+                    <h2>Building a Multi-Agent Financial AI System</h2>
                     <h3 class="post-meta">
                         By Amirmahdi Ghasabioroji
-                        on August 12, 2025 04:15 PM (UTC)
+                        on August 4, 2026 03:20 PM (UTC)
                     </h3>
                     <div class="post-content">
-                        Coaching young footballers, leading a physics team, and working in sales taught me more than any single classroom module. Those roles demanded clear communication, patience, and a results-oriented mindset. I still use that approach in university projects: break a problem down, keep the team aligned, and stay accountable for the outcome. Those lessons continue to shape how I learn, collaborate, and build.
+                        I spent this year assembling a 4-agent pipeline — Analyst, Risk, Strategy, and Execution — orchestrated with LangGraph and backed by RAG over Qdrant. The interesting part was not only the agents, but the evaluation layer: Sharpe, Sortino, Calmar, drawdown, and a 5,000-path Monte Carlo bootstrap. 126+ tests later, the system is less of a demo and more of a habit: measure, stress-test, then trust.
                     </div>
                 </div>
 
-                <div class="blog-post" data-month="May">
-                    <h2>Why AI and Machine Learning Matter to Me</h2>
+                <div class="blog-post" data-month="Jun">
+                    <h2>Teaching Logic While Supervising a London Floor</h2>
                     <h3 class="post-meta">
                         By Amirmahdi Ghasabioroji
-                        on May 22, 2025 11:40 AM (UTC)
+                        on June 18, 2026 10:05 AM (UTC)
                     </h3>
                     <div class="post-content">
-                        I chose Computer Science and AI because I want to build systems that make everyday life simpler and more capable. Machine learning is already changing how we work, move, and communicate. My goal is to stay at the front of that change: learning the fundamentals thoroughly, then applying them to practical problems in robotics, automation, and intelligent software.
+                        PASS mentoring at Queen Mary and supervising front of house at Corretto look unrelated until you do both. One role is translating discrete structures into language students can use; the other is keeping a live service moving. Both reward the same habit: stay calm, make the next step obvious, and measure whether people actually leave better off — course marks up 12%, satisfaction up 15%.
                     </div>
                 </div>
 
                 <div class="blog-post" data-month="Mar">
-                    <h2>Building This Portfolio from the Ground Up</h2>
+                    <h2>Visualising Bitcoin Markets with Generative Models</h2>
                     <h3 class="post-meta">
                         By Amirmahdi Ghasabioroji
-                        on March 8, 2025 06:20 PM (UTC)
+                        on March 12, 2026 05:40 PM (UTC)
                     </h3>
                     <div class="post-content">
-                        This site started as a frontend exercise in HTML, CSS, and JavaScript. I focused on a responsive layout, a consistent visual language, and pages that still feel like one portfolio when you move from home to skills, experience, and the blog. Working through the design taught me how small details — spacing, contrast, and navigation — decide whether a page feels finished.
+                        Live Binance prices and Bluesky text are messy in different ways. I used PCA and a VAE to compress that mix, then a TensorFlow MLP to connect sentiment with market structure in Plotly. The constraint that shaped the project was speed: the full path had to stay under 500ms. That forced cleaner pipelines and a sharper view of which metrics actually mattered.
                     </div>
                 </div>
 
-                <div class="blog-post" data-month="Jan">
-                    <h2>Starting the Journey at Queen Mary</h2>
+                <div class="blog-post" data-month="Sep">
+                    <h2>From King's Foundation to Queen Mary</h2>
                     <h3 class="post-meta">
                         By Amirmahdi Ghasabioroji
-                        on January 15, 2025 02:30 PM (UTC)
+                        on September 20, 2024 02:30 PM (UTC)
                     </h3>
                     <div class="post-content">
-                        After finishing my foundation programme with a Distinction, I began Computer Science and AI at Queen Mary University of London. The first months were intense: new tools, new teammates, and a much faster pace. I am aiming for a First-Class degree by treating every module as a chance to practise, not just to pass. This blog is where I will share that progress.
+                        After an Advanced Level Foundation at King's Education — Mathematics at A*A*A equivalent — I started the BSc in Computer Science and Artificial Intelligence at Queen Mary. The modules that now shape my work are NLP, generative deep learning, data systems, probability, big data processing, and Bayesian decision making. This site is where I record that progress.
                     </div>
                 </div>
 
@@ -110,9 +110,10 @@
                 <p><i class="fas fa-envelope"></i> Email: Ghasabioroji@gmail.com</p>
                 <p><i class="fas fa-phone"></i> Phone: +44 7867 081909</p>
                 <p><i class="fas fa-map-marker-alt"></i> Address: London, United Kingdom</p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Amirmahdi-Ghasabioroji">Amirmahdi-Ghasabioroji</a></p>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Amirmahdi Ghasabioroji. All rights reserved.</p>
+                <p>&copy; 2026 Amirmahdi Ghasabioroji. All rights reserved.</p>
             </div>
         </div>
     </footer>
