@@ -1,0 +1,55 @@
+/* Reset CSS for Amirmahdi Ghasabioroji's Portfolio */
+
+/* Document elements */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+  }
+  
+  /* Block elements */
+  header, main, section, footer, 
+  article, aside, figure, figcaption, 
+  div, nav, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* List elements */
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Form elements */
+  form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  
+  /* Inline elements */
+  a, span, i {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Media elements */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
+  }
+  
+  /* Table elements */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }

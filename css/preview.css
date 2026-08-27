@@ -1,0 +1,64 @@
+/* Preview specific styles */
+.preview-post {
+    background: rgba(13, 36, 65, 0.8);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #4da6ff;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.preview-post h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-family: Italiana, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.preview-post .post-meta {
+    color: #a0a0a0;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.preview-post .post-content {
+    color: #f0f0f0;
+    line-height: 1.6;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.preview-actions {
+    margin-top: 2rem;
+}
+
+.form-button.publish {
+    background: linear-gradient(90deg, #4da6ff, #0077b5);
+}
+
+.form-button.publish:hover {
+    background: linear-gradient(90deg, #3a8ad4, #005f92);
+}
+
+.form-button.edit {
+    background: linear-gradient(90deg, #3d4852, #1f2937);
+}
+
+.form-button.edit:hover {
+    background: linear-gradient(90deg, #4b5563, #2d3748);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .preview-post {
+        padding: 1.5rem;
+    }
+    
+    .preview-post h2 {
+        font-size: 1.5rem;
+    }
+}
