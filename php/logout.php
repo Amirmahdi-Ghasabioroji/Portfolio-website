@@ -8,6 +8,6 @@ $_SESSION = array();
 session_destroy();
 
 // Redirect to homepage
-header("Location: portfolio.php");
+header("Location: ../index.html");
 exit();
 ?>

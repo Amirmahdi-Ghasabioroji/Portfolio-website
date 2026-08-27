@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +30,7 @@ session_start();
                 <li><a href="#education">Education</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="blog.php">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -107,18 +103,6 @@ session_start();
                 </div>
 
                 <aside class="blog-sidebar">
-                    <div class="login-form">
-                        <h3>Login</h3>
-                        <form action="login.php" method="post">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" name="password" placeholder="Password" required>
-                            </div>
-                            <button type="submit" class="btn">Login</button>
-                        </form>
-                    </div>
                     <div class="sidebar-image">
                         <img src="images/robot.jpg" alt="Coding">
                         <p>
@@ -157,22 +141,6 @@ session_start();
                     <span>Detailed Experiences and Skills Portfolio</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
-            </div>
-        </section>
-
-        <section>
-            <div class="portfolio-button-container">
-                <?php if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
-                    <a href="logout.php" class="portfolio-button">
-                        <span>Logout</span>
-                        <i class="fas fa-sign-out-alt"></i>
-                    </a>
-                <?php else: ?>
-                    <a href="login.php" class="portfolio-button">
-                        <span>Login</span>
-                        <i class="fas fa-sign-in-alt"></i>
-                    </a>
-                <?php endif; ?>
             </div>
         </section>
     </main>
