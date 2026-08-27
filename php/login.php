@@ -96,14 +96,14 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Amirmahdi Ghasabioroji</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/addpost.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../css/addpost.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="nav.js"></script>
+    <script src="../nav.js"></script>
 </head>
 <body>
 <header class="header">
@@ -118,7 +118,7 @@ $conn->close();
         </label>
         <nav>
             <ul>
-                <li><a href="portfolio.php">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
