@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Amirmahdi Ghasabioroji</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/mobile.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             <h1>Amirmahdi Ghasabioroji</h1>
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="hamburger">
+        <label for="nav-toggle" class="hamburger" aria-label="Open navigation">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -43,12 +43,10 @@
         <section id="summary">
             <div class="summary-box">
                 <div class="summary-content">
-                    <h2>My Learning Journey: Skills & Growth</h2>
+                    <h2>Skills: AI, Data, and Quantitative Work</h2>
                     <p>
-                        Personal development has always been a core aspect of my life, as I continuously strive to maximise my skills and learn new ones. 
-                        My passion for AI, computers, and finance has driven me to self-teach valuable skills such as Python, technical analysis, and statistics. 
-                        Additionally, my ability to work both independently and as part of a team has helped me develop interpersonal skills such as communication and problem-solving, while also enhancing my presentation and teamwork abilities. 
-                        Acquiring new skills and refining existing ones is how I grow and work toward achieving my dreams.
+                        My technical focus is AI and machine learning — TensorFlow, PyTorch, agentic systems, and generative models — backed by statistical modelling and financial data work.
+                        I use Python as my main language, with Java for simulation and OOP projects, plus Docker, SQL/MySQL, and tools such as LangChain and Cursor to ship tested systems.
                     </p>
                 </div>
                 <div class="summary-image">
@@ -58,57 +56,56 @@
         </section>
 
         <section id="skills" class="skills-section">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <div class="skill-name">Python</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="65%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Java</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="85%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Leadership</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="95%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Technical analysis</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="90%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Statistics</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="60%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Team-work</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="85%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Communication</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="95%"></div>
-                    </div>
-                    
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Problem-solving</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="90%"></div>
-                    </div>
-                </div>
+            <h2>Technical Skills</h2>
+            <div class="skill-groups">
+                <article class="skill-group">
+                    <h3>AI / ML</h3>
+                    <ul class="skill-tags">
+                        <li>NumPy</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Pandas</li>
+                        <li>Scikit-learn</li>
+                        <li>LangChain</li>
+                        <li>Agentic AI</li>
+                        <li>Generative models</li>
+                        <li>Supervised learning</li>
+                        <li>Unsupervised learning</li>
+                        <li>Fine-tuning</li>
+                        <li>Prompt engineering</li>
+                        <li>Cursor</li>
+                        <li>Docker</li>
+                    </ul>
+                </article>
+                <article class="skill-group">
+                    <h3>Data</h3>
+                    <ul class="skill-tags">
+                        <li>Statistical modelling</li>
+                        <li>Dimensionality reduction</li>
+                        <li>Clustering</li>
+                        <li>Regression</li>
+                        <li>Data pipelines</li>
+                        <li>Financial modelling</li>
+                        <li>Algorithmic trading</li>
+                        <li>Quantitative analysis</li>
+                        <li>Excel</li>
+                        <li>SQL / MySQL</li>
+                    </ul>
+                </article>
+                <article class="skill-group">
+                    <h3>Languages &amp; tools</h3>
+                    <ul class="skill-tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>LangGraph</li>
+                        <li>Qdrant</li>
+                        <li>RAG</li>
+                        <li>Keras</li>
+                        <li>Plotly</li>
+                        <li>pytest</li>
+                        <li>GitHub</li>
+                    </ul>
+                </article>
             </div>
         </section>
     </main>
@@ -120,9 +117,10 @@
                 <p><i class="fas fa-envelope"></i> Email: Ghasabioroji@gmail.com</p>
                 <p><i class="fas fa-phone"></i> Phone: +44 7867 081909</p>
                 <p><i class="fas fa-map-marker-alt"></i> Address: London, United Kingdom</p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Amirmahdi-Ghasabioroji">Amirmahdi-Ghasabioroji</a></p>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Amirmahdi Ghasabioroji. All rights reserved.</p>
+                <p>&copy; 2026 Amirmahdi Ghasabioroji. All rights reserved.</p>
             </div>
         </div>
     </footer>

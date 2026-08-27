@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiences - Amirmahdi Ghasabioroji</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/mobile.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
             <h1>Amirmahdi Ghasabioroji</h1>
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="hamburger">
+        <label for="nav-toggle" class="hamburger" aria-label="Open navigation">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -30,6 +30,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#summary">Summary</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="detailed-portfolio.html#detailed-experience">Detailed Experiences</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -42,11 +43,11 @@
         <section id="summary">
             <div class="summary-box">
                 <div class="summary-content">
-                    <h2>My Experiences Journey: Challenges & Lessons</h2>
+                    <h2>Experience: Markets, Teaching, and Teams</h2>
                     <p>
-                        I've always been fascinated by how computers and robots operate. Over the years, I've expanded my skills through various jobs and challenges. 
-                        I've worked in finance and trading to explore AI's role in the field, while also strengthening my communication skills in customer-facing roles. 
-                        Throughout high school, I took on leadership positions that honed my results-oriented mindset. These experiences have fueled my passion to continue pursuing my dreams.
+                        My recent work sits between quantitative trading, university teaching, and customer-facing leadership in London.
+                        As an FX specialist I build Python models and algorithmic strategies; as a PASS mentor I help students make Logic &amp; Discrete Structures clearer; and as a Front of House supervisor I lead a service team under pressure.
+                        Alongside those roles I have been building AI systems — multi-agent finance, generative market visualisation, and transformer research.
                     </p>
                 </div>
                 <div class="summary-image">
@@ -59,44 +60,54 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>University programming projects</h3>
-                        <h4>Queen Mary University of London</h4>
-                        <p class="timeline-date">2024 - Present</p>
-                        <p>Working on frontend development with HTML, CSS, and JavaScript, creating responsive designs and UI components. Developing backend functionality with PHP and building Java projects for user-friendly design and functionality.</p>
+                        <h3>FX Specialist: Proprietary &amp; Client Trading</h3>
+                        <h4>Independent</h4>
+                        <p class="timeline-date">May 2022 – Present</p>
+                        <p>Developed quantitative models and algorithmic trading strategies in Python, increasing trade success rates by 15% through data-driven analysis. Turned large volumes of time-series data into signals for position sizing and risk.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Foreign Exchange Trader</h3>
-                        <h4>Freelance</h4>
-                        <p class="timeline-date">2022 - present</p>
-                        <p>Professional Forex trader specialising in growing client accounts within a fixed timeframe to achieve specific financial objectives. Engaged in personal trading for consistent market expertise.</p>
+                        <h3>Front of House Supervisor</h3>
+                        <h4>Corretto, London</h4>
+                        <p class="timeline-date">Jun 2025 – Present</p>
+                        <p>Improved customer satisfaction and company performance by 15% through clear communication and day-to-day leadership on the floor.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Sales Assistnat </h3>
-                        <h4>Galaxy Sport Shiraz</h4>
-                        <p class="timeline-date">2022 - 2023</p>
-                        <p>Worked as a Sales Assistant, gaining valuable experience in effective communication with diverse customers. Contributed to a 15% increase in sales by providing excellent service and team-work.</p>
+                        <h3>PASS Mentor &amp; Logic Demonstrator</h3>
+                        <h4>Queen Mary, University of London</h4>
+                        <p class="timeline-date">Sep 2025 – Jun 2026</p>
+                        <p>Raised course marks by 12% through structured peer-learning sessions and boosted academic engagement by up to 15%. Worked with 10 demonstrators and lecturers on Logic &amp; Discrete Structures.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Assistant Football Coach </h3>
-                        <h4>Arad Shiraz</h4>
-                        <p class="timeline-date">2021 - 2022</p>
-                        <p>Organized matches and training sessions for children, focusing on team objectives and high-quality results. Maintained regular communication with parents and head coaches.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Physics team-leader </h3>
-                        <h4>Dastgheib High School</h4>
-                        <p class="timeline-date">2017 - 2021</p>
-                        <p>Led workshops for fellow students, teaching applied physics and preparing for competitions. Achieving 2nd place in applied physics competition leading a team of 3 people.</p>
-                    </div>
-                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="project-section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Multi-Agent Financial AI System</h3>
+                    <p class="project-tech">Python, RAG, Qdrant, Docker, LangGraph, Cursor</p>
+                    <p>A 4-agent pipeline (Analyst, Risk, Strategy, Execution) with quantitative strategy evaluation, Monte Carlo stress testing, and 126+ automated tests.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Bitcoin Market Generative AI Visualisation</h3>
+                    <p class="project-tech">Python, TensorFlow, Keras, NumPy, Plotly</p>
+                    <p>PCA and VAE feature learning on live Binance and Bluesky data, with a custom MLP for sentiment and correlation visualisation under 500ms.</p>
+                </article>
+                <article class="project-card">
+                    <h3>NLP, Generative &amp; Transformer Research</h3>
+                    <p class="project-tech">PyTorch, TensorFlow</p>
+                    <p>Autoregressive and Transformer architectures for text prediction, multimodal generation, and RLHF, trained with CUDA GPU acceleration.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Horse Race Simulator</h3>
+                    <p class="project-tech">Java, GitHub</p>
+                    <p>A modular probabilistic simulation with an interactive GUI and performance analytics, modelling financial outcomes under uncertainty.</p>
+                </article>
             </div>
         </section>
     </main>
@@ -108,9 +119,10 @@
                 <p><i class="fas fa-envelope"></i> Email: Ghasabioroji@gmail.com</p>
                 <p><i class="fas fa-phone"></i> Phone: +44 7867 081909</p>
                 <p><i class="fas fa-map-marker-alt"></i> Address: London, United Kingdom</p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Amirmahdi-Ghasabioroji">Amirmahdi-Ghasabioroji</a></p>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Amirmahdi Ghasabioroji. All rights reserved.</p>
+                <p>&copy; 2026 Amirmahdi Ghasabioroji. All rights reserved.</p>
             </div>
         </div>
     </footer>
